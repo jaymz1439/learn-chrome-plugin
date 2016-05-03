@@ -11,7 +11,7 @@
    "manifest_version": 2,
    "name": "Jaymz Weather",
    "permissions":  ["tabs", "notifications","http://m.weather.com.cn/*"],
-   "version": "1.7.6"
+   "version": "1.7.7"
 }
 
 
