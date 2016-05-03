@@ -1,0 +1,30 @@
+<html>  
+<head>  
+     <meta charset="UTF-8">  
+     <title>weather</title>       
+     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>  
+     <script type="text/javascript">  
+     function init() {  
+          //$id = "101020100";// 
+          //$url = "http://m.weather.com.cn/data/" + $id + ".html";//接口URL  
+            
+          // 利用下载服务器端脚本来间接解决跨域访问问题  
+          $.getScript(  
+               'http://61.4.185.48:81/g/',  
+               function(){  
+                    $.get("http://m.weather.com.cn/data/" + id + ".html",  
+                         function(data) {                                
+                              window.localStorage.weather = data;  
+                         }  
+                    );  
+               }  
+          );            
+     }  
+     window.setInterval(init(), 5*60*1000);       
+     </script>  
+  
+</head>  
+<body>  
+       
+</body>  
+</html>  
