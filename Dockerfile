@@ -1,3 +1,3 @@
-from ubuntu
-maintainer jaymz.zou
-cmd["echo","this is a docker jenkins test"]
+FROM ubuntu
+MAINTAINER jaymz.zou
+CMD ["/bin/bash"]
