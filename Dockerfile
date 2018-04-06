@@ -1,4 +1,3 @@
 from tomcat
 maintainer jaymz.zou
-
-entrypoint["catalina.sh","bin/bash"]
+cmd["/bin/echo","this is a docker jenkins test"]
